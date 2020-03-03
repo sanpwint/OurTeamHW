@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Our Team"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <androidx.cardview.widget.CardView
+        android:id="@+id/p1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:cardCornerRadius="100dp"
+        android:layout_marginTop="70dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/p2">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/md1" />
+
+    </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/p2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:cardCornerRadius="100dp"
+            android:layout_marginTop="70dp"
+            app:layout_constraintLeft_toRightOf="@id/p1"
+            app:layout_constraintRight_toLeftOf="@id/p3"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/md2" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/p3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:cardCornerRadius="100dp"
+            android:layout_marginTop="70dp"
+            app:layout_constraintLeft_toRightOf="@id/p2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/md3" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/p4"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:cardCornerRadius="100dp"
+            android:layout_marginTop="40dp"
+
+            app:layout_constraintRight_toLeftOf="@id/p5"
+            app:layout_constraintTop_toBottomOf="@id/p1"
+            app:layout_constraintLeft_toLeftOf="parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/md4" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/p5"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:cardCornerRadius="100dp"
+            android:layout_marginTop="40dp"
+            app:layout_constraintRight_toLeftOf="@id/p6"
+            app:layout_constraintLeft_toRightOf="@id/p4"
+            app:layout_constraintTop_toBottomOf="@id/p1">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/md5" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/p6"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:cardCornerRadius="100dp"
+            android:layout_marginTop="40dp"
+
+            app:layout_constraintLeft_toRightOf="@id/p5"
+            app:layout_constraintTop_toBottomOf="@id/p1"
+            app:layout_constraintRight_toRightOf="parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/md1" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adams"
+            android:textColor="#000000"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/tv2"
+            app:layout_constraintTop_toBottomOf="@id/p1" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Betty L"
+            android:textColor="#000000"
+            app:layout_constraintLeft_toRightOf="@id/tv1"
+            app:layout_constraintRight_toLeftOf="@+id/tv3"
+            app:layout_constraintTop_toBottomOf="@id/p2" />
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Roberts"
+            android:textColor="#000000"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintLeft_toRightOf="@id/tv2"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/p3" />
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Miller W"
+            android:textColor="#000000"
+            app:layout_constraintRight_toLeftOf="@id/tv5"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/p4"/>
+
+        <TextView
+            android:id="@+id/tv5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kevin John"
+            android:textColor="#000000"
+            app:layout_constraintRight_toLeftOf="@id/tv6"
+            app:layout_constraintLeft_toRightOf="@id/tv4"
+            app:layout_constraintTop_toBottomOf="@id/p4"/>
+
+        <TextView
+            android:id="@+id/tv6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Laura M"
+            android:textColor="#000000"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/tv5"
+            app:layout_constraintTop_toBottomOf="@id/p4"/>
+
+        <TextView
+            android:id="@+id/tv7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Excutive Officer"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/tv8"
+            app:layout_constraintTop_toBottomOf="@id/tv1" />
+
+        <TextView
+            android:id="@+id/tv8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Marketing"
+            android:layout_marginLeft="25dp"
+            app:layout_constraintLeft_toRightOf="@id/tv1"
+            app:layout_constraintRight_toLeftOf="@+id/tv9"
+            app:layout_constraintTop_toBottomOf="@id/tv1" />
+
+        <TextView
+            android:id="@+id/tv9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Business Analyst"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintLeft_toRightOf="@id/tv8"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv1" />
+
+        <TextView
+            android:id="@+id/tv10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UX Designer"
+            app:layout_constraintRight_toLeftOf="@id/tv11"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv4"/>
+
+        <TextView
+            android:id="@+id/tv11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Web Developer"
+            app:layout_constraintRight_toLeftOf="@id/tv12"
+            app:layout_constraintLeft_toRightOf="@id/tv10"
+            app:layout_constraintTop_toBottomOf="@id/tv4"/>
+
+        <TextView
+            android:id="@+id/tv12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MobileDev"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/tv11"
+            app:layout_constraintTop_toBottomOf="@id/tv4"/>
+
+        <TextView
+            android:id="@+id/mission"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mission"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:layout_marginTop="25dp"
+            app:layout_constraintTop_toBottomOf="@id/tv11"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <TextView
+            android:id="@+id/fulltext"
+            android:layout_width="370dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:text="Duis tellus metus,elementum a lectus id, aliquet
+interdum mauris. Nam bibendum efficitur sollicitudin. Proin eleifend
+libero velit, nec fringilla dolor finibus quis. nMorbi eu libero pellentesque,
+rutrum metus quis, blandit est. Fusce bibendum accumsan nisi vulputate feugiant.
+In fermentum laoreet euismod. Praesent sem nisl, facilisis eget odio at, rhoncus
+scelerisque ipsum. Nulla orci dui, dignissim a risus ut, loboritis porttior
+velit."
+            android:textSize="18sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mission" />
+
+        <TextView
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Null id lectus metus. Maecenaus a lorem in odio
+auctor facillisis non vitae nunc. Sef malesuada volutpat massa. Praesent
+sit amet lacinia augue."
+            android:textSize="18sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fulltext" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
